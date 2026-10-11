@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header>
+            <h1>⌨️ Typing Speed Test</h1>
+            <p>Test your typing speed and accuracy!</p>
+        </header>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h3>Time Left</h3>
+                <p id="timer">60</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Speed (WPM)</h3>
+                <p id="wpm">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Accuracy</h3>
+                <p id="accuracy">100%</p>
+            </div>
+        </section>
+
+        <section class="typing-section">
+            <h2>Type the passage below</h2>
+
+            <div id="passage" class="passage"></div>
+
+            <textarea
+                id="typing-input"
+                placeholder="Start typing here..."
+                rows="5"
+                spellcheck="false"
+                disabled
+            ></textarea>
+
+            <div class="buttons">
+                <button id="start-btn">Start Test</button>
+                <button id="restart-btn">Restart</button>
+            </div>
+
+            <p id="message">Click Start Test to begin.</p>
+        </section>
+
+        <section id="result-section" class="result hidden">
+            <h2>Test Completed!</h2>
+            <p id="final-wpm"></p>
+            <p id="final-accuracy"></p>
+            <p id="final-correct"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
